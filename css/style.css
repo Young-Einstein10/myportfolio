@@ -39,6 +39,10 @@ section {
   margin: auto;
 }
 
+.navbar-nav li a {
+  color: #dfa612;
+}
+
 a {
   color: #dfa612;
 }
