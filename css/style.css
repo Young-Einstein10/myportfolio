@@ -39,7 +39,7 @@ section {
   margin: auto;
 }
 
-.navbar-nav li a {
+.navbar-nav .nav-item .nav-link {
   color: #dfa612;
 }
 
