@@ -6,7 +6,7 @@ body {
   box-sizing: border-box;
 }
 
-section#bg-home{
+section#bg-home {
   height: 100vh;
   margin: 0 0;
   padding-top: 0;
@@ -31,7 +31,8 @@ section {
   padding-right: 0;
 }
 
-.navbar *, .nav-item * {
+.navbar *,
+.nav-item * {
   color: #dfa612;
 }
 
@@ -74,8 +75,17 @@ a {
   color: #d4c7b8;
 }
 
+nav {
+  font-size: 1.3rem;
+}
+
+nav .navbar-brand {
+  font-size: 2rem;
+}
 
 .work-box {
+  max-width: 400px;
+  min-height: 300px;
   box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
   display: flex;
   -moz-box-pack: justify;
@@ -90,6 +100,10 @@ a {
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   background-color: #daa51b;
   color: #222831;
+}
+
+.work-box header {
+  width: 100%;
 }
 
 .work-box:hover {
@@ -130,9 +144,9 @@ div .project-content {
 
 .profile-container {
   background-color:
-  rgba(223, 166, 18, 0.5);
-  width: 230px;
-  height: 235px;
+    rgba(223, 166, 18, 0.5);
+  width: 400px;
+  height: 400px;
   border-radius: 3px;
   padding: 0;
 }
@@ -145,6 +159,7 @@ div .project-content {
 
 .img-link {
   border-radius: 3px;
+  margin-top: 80px;
 }
 
 .profile-pic:hover {
@@ -155,12 +170,24 @@ div .project-content {
 .profile-pic {
   position: relative;
   z-index: -1;
-  width: 230px; 
-  height: 235px;
+  width: 400px;
+  height: 400px;
   transition: all 0.7s;
   position: relative;
   filter: grayscale(100%) contrast(1);
   border-radius: 3px;
+}
+
+#contact h2 {
+  font-size: 3rem;
+}
+
+#contact p {
+  font-size: 1.3rem;
+}
+
+#contact .btn {
+  padding: 1rem 2.5rem;
 }
 
 ul {
@@ -176,3 +203,33 @@ ul {
   flex-grow: 0;
 }
 
+.about-container {
+  margin-top: 100px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.about-btn {
+  margin-top: 20px;
+  padding: 15px 20px;
+}
+
+.myskills {
+  font-size: 20px;
+}
+
+.myskills li {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .work-box {
+    margin: 0 auto;
+  }
+
+  .img-link {
+    margin-top: 0;
+  }
+}
