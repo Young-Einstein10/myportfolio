@@ -135,6 +135,7 @@ svg {
 ul#stack {
   margin-top: 20px;
   margin-bottom: 0;
+  flex-wrap: wrap;
 }
 
 ul#stack .stack-item {
