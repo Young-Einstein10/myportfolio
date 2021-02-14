@@ -27,11 +27,11 @@ const projectList = [
     ],
   },
   {
-    name: "Chat App",
-    description: `A Mini Chat Application.`,
-    githubUrl: "https://github.com/Young-Einstein10/firebase-chat-app",
-    deployedUrl: "https://fullstack-app-with-firebase.firebaseapp.com/",
-    technologies: ["HTML/CSS", "Javascript", "Firebase", "ES6"],
+    name: "30 Days of Code",
+    description: `A Curated list of beginner to intermediate level projects organized by the Developer Students Club (DSC) Unilag during the Covid19 Pandemic.`,
+    githubUrl: "https://github.com/Young-Einstein10/30DaysOfCode",
+    deployedUrl: "",
+    technologies: ["HTML/CSS", "Javascript", "React", "Firebase", "ES6"],
   },
   {
     name: "COVID-19 Impact Estimator",
@@ -86,7 +86,9 @@ const projectTemplate = ({
                     </svg>
                   </a>
         
-                  <a href=${deployedUrl} target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link" class="">
+                  ${
+                    deployedUrl
+                      ? `<a href=${deployedUrl} target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link" class="">
                     <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 194.818 194.818">
                       <title>External</title>
                       <g>
@@ -98,7 +100,10 @@ const projectTemplate = ({
                         </path>
                       </g>
                     </svg>
-                  </a>
+                  </a>`
+                      : ""
+                  }
+
                 </div>
               </div>
               <h3 class="project-title">
