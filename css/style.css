@@ -1,9 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #222831;
   color: #f1b10b;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   line-height: 1.8;
   box-sizing: border-box;
+}
+
+section {
+  min-height: 100vh;
+  margin: 3.5rem 0;
+  padding-top: 80px;
+}
+
+section#bg-home .header {
+  height: 80px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  background-color: rgb(34 40 49 / 0.97);
+  border-bottom: solid 1px rgb(241 177 11 / 0.2);
 }
 
 section#bg-home {
@@ -11,12 +32,6 @@ section#bg-home {
   margin: 0 0;
   padding-top: 0;
   padding-bottom: 0;
-}
-
-section {
-  min-height: 100vh;
-  margin: 3.5rem 0;
-  /* padding: 20px 0; */
 }
 
 .intro p:first-child {
@@ -53,7 +68,7 @@ section {
 }
 
 .content-wrapper {
-  margin: auto;
+  margin: 18rem auto auto;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -156,8 +171,7 @@ div .project-content {
 }
 
 .profile-container {
-  background-color:
-    rgba(223, 166, 18, 0.5);
+  background-color: rgba(223, 166, 18, 0.5);
   width: 400px;
   height: 400px;
   border-radius: 3px;
@@ -237,7 +251,6 @@ p {
   font-size: 20px;
 }
 
-
 .skills-intro p {
   font-size: 1.3rem;
 }
@@ -250,7 +263,6 @@ span.date {
   font-size: 12px;
   margin: 0;
 }
-
 
 @media screen and (max-width: 768px) {
   .work-box {
