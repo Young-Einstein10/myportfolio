@@ -265,6 +265,21 @@ span.date {
 }
 
 @media screen and (max-width: 768px) {
+  section#bg-home .header {
+    background-color: transparent;
+    border-bottom: none;
+  }
+
+  section#bg-home .header .container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    background-color: rgb(34 40 49 / 0.97);
+    border-bottom: solid 1px rgb(241 177 11 / 0.2);
+  }
+
   .work-box {
     margin: 0 auto;
   }
